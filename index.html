@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vetriselvan | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Portfolio</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="#touch">Get in Touch</a>
+  </div>
+</nav>
+
+<section class="hero">
+
+  <div class="hero-container">
+
+    <!-- LEFT SIDE -->
+    <div class="hero-text">
+
+      <h1>Hi, I'm <span>Vetriselvan</span></h1>
+      <p>Full Stack Developer | Java Backend Developer | Spring Boot | REST APIs</p>
+      <p class="hero-subtitle">
+  B.E CSE Student
+</p>
+
+      <div class="hero-buttons">
+  <button class="btn" onclick="scrollToProjects()">View Projects</button>
+  <button class="btn" onclick="downloadResume()">Download Resume</button>
+</div>
+
+      <!-- EDUCATION -->
+      <div class="hero-education">
+        <div class="edu-box">
+          <h4>B.E CSE</h4>
+          <p>Chettinad College</p>
+          <p>7.7 CGPA</p>
+          <span>2023 – Present</span>
+        </div>
+
+        <div class="edu-box">
+          <h4>HSC</h4>
+          <p>State Board</p>
+          <p>90%</p>
+          <span>2022 – 2023</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="hero-image">
+      <img src="Vetri.jpeg" alt="My Photo">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-container">
+
+    <!-- LEFT -->
+    <div class="about-text" data-aos="fade-right">
+
+      <h1>
+    Passionate <span class="highlight">Full Stack Developer</span>
+  </h1>
+
+  <p>
+    I am a dedicated Full Stack Developer with a strong foundation in 
+    <strong>Java, Spring Boot, REST APIs, and MySQL</strong>. 
+    I focus on building scalable, secure, and high-performance backend systems 
+    using clean architecture and best coding practices.
+  </p>
+
+  <p>
+    On the frontend, I create responsive and user-friendly interfaces using 
+    <strong>HTML, CSS, and JavaScript</strong>, and enhance user experience 
+    through modern <strong>UI/UX design using Figma</strong>.
+  </p>
+
+      <h3>What I Bring</h3>
+
+      <div class="about-points">
+        <span>● Full Stack Development</span>
+        <span>● REST API Development</span>
+        <span>● UI/UX Design</span>
+        <span>● Problem Solving</span>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="about-cards" data-aos="fade-left">
+
+      <div class="card-box">
+        <i class="fa-solid fa-code"></i>
+        <h4>Full Stack Developer</h4>
+        <p>Building complete web applications</p>
+      </div>
+
+      <div class="card-box">
+        <i class="fa-solid fa-layer-group"></i>
+        <h4>Clean Architecture</h4>
+        <p>Designing scalable systems</p>
+      </div>
+
+      <div class="card-box">
+        <i class="fa-solid fa-palette"></i>
+        <h4>UI/UX Designer</h4>
+        <p>Creating intuitive interfaces</p>
+      </div>
+
+      <div class="card-box">
+        <i class="fa-solid fa-bolt"></i>
+        <h4>Performance Focused</h4>
+        <p>Optimizing speed & efficiency</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="card" onclick="openModal('p1')">
+      <img src="liba.png" alt="Library Management">
+      <h3>Library Management</h3>
+      <p>Click for details</p>
+    </div>
+
+    <div class="card" onclick="openModal('p2')">
+      <img src="liba.png" alt="Rental Billing System">
+      <h3>Rental Billing System </h3>
+      <p>Click for details</p>
+    </div>
+
+  </div>
+</section>
+<section id="skills">
+    <div class="container">
+
+  <h2 class="section-title">Skills</h2>
+<div class="skills-grid">
+
+  <div class="skill-card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+    <p>Java</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">
+    <p>Spring Boot</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+    <p>MySQL</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png">
+    <p>REST APIs</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+    <p>HTML</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+    <p>CSS</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+    <p>JavaScript</p>
+  </div>
+
+  <div class="skill-card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
+    <p>UI/UX Design</p>
+  </div>
+
+</div>
+ </div>
+</section>
+<section id="certificates">
+
+  <div class="container">
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="cert-grid">
+
+      <!-- 1 -->
+      <div class="cert-card" data-aos="fade-up">
+        <div class="cert-icon">
+          <i class="fa-brands fa-java"></i>
+        </div>
+        <h4>Java Programming</h4>
+        <p>Core Java fundamentals, OOP, collections, and exception handling.</p>
+        <span class="cert-badge">Certified</span>
+      </div>
+
+      <!-- 2 -->
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="cert-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <h4>Spring Boot & REST APIs</h4>
+        <p>Building production-grade REST APIs using Spring Boot and JPA.</p>
+        <span class="cert-badge">Certified</span>
+      </div>
+
+      <!-- 3 -->
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="cert-icon">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <h4>SQL</h4>
+        <p>Complex queries, joins, subqueries, and database optimization.</p>
+        <span class="cert-badge">Certified</span>
+      </div>
+
+      <!-- 4 -->
+      <div class="cert-card" data-aos="fade-up">
+        <div class="cert-icon">
+          <i class="fa-brands fa-figma"></i>
+        </div>
+        <h4>UI/UX Design - Figma</h4>
+        <p>Wireframing, prototyping, and modern UI design principles.</p>
+        <span class="cert-badge">Certified</span>
+      </div>
+
+      <!-- 5 -->
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="cert-icon">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <h4>Responsive Web Design</h4>
+        <p>HTML, CSS, Flexbox, Grid, and responsive layouts.</p>
+        <span class="cert-badge">Certified</span>
+      </div>
+
+      <!-- 6 -->
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="cert-icon">
+          <i class="fa-brands fa-js"></i>
+        </div>
+        <h4>JavaScript (Intermediate)</h4>
+        <p>DOM, async/await, ES6+, and modern JavaScript concepts.</p>
+        <span class="cert-badge">Certified</span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <!-- TOP BOX -->
+  <div class="contact-box" data-aos="fade-up">
+    <div>
+      <h3>Ready to collaborate on your next project?</h3>
+      <p>Let’s discuss how we can work together.</p>
+    </div>
+
+    <a href="#touch" class="contact-btn">
+      <i class="fa-solid fa-paper-plane"></i> Get In Touch
+    </a>
+  </div>
+
+  <!-- INFO -->
+  <div class="contact-info">
+
+    <div class="info-card">
+      <i class="fa-solid fa-envelope"></i>
+      <span>vetrijr545@gmail.com</span>
+    </div>
+
+    <div class="info-card">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>Ariyalur, Tamil Nadu</span>
+    </div>
+
+  </div>
+
+  <!-- SOCIAL -->
+  <div class="contact-social">
+
+    <a href="https://www.linkedin.com/in/vetri-selvan-65984636a/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+
+    <a href="https://github.com/Vetriselvan545" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+
+    <a href="https://www.hackerrank.com/profile/vetrijr545" target="_blank">
+      <i class="fa-solid fa-code"></i> HackerRank
+    </a>
+
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="touch" class="touch">
+  <h2>Get in Touch</h2>
+
+  <form action="https://formspree.io/f/mojrpnez" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+    <!-- optional -->
+    <input type="hidden" name="_subject" value="New Portfolio Message">
+
+    <button type="submit">Send Message</button>
+
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Vetriselvan</p>
+</footer>
+
+<!-- MODAL -->
+<div id="p1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('p1')">&times;</span>
+
+    <div class="modal-body">
+
+      <div class="modal-image">
+        <img class="slider-img" src="images.png">
+
+        <div class="slider-buttons">
+          <button onclick="prevSlide()">❮</button>
+          <button onclick="nextSlide()">❯</button>
+        </div>
+      </div>
+
+      <div class="modal-info">
+        <h2>Library Management</h2>
+        <p><strong>Description:</strong> A Library Management System backend using Java and Spring Boot to manage books and student records through RESTful CRUD APIs. The application follows a layered architecture and integrates with MySQL for efficient data handling</p>
+        <p><strong>Tech:</strong> Java, Spring Boot, MySQL</p>
+
+        <div class="modal-buttons">
+          <a href="https://github.com/Vetriselvan545/libraryspringbootproject.git">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="p2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('p2')">&times;</span>
+
+    <div class="modal-body">
+
+      <div class="modal-image">
+        <img class="slider-img" src="img/bill1.png">
+
+        <div class="slider-buttons">
+          <button onclick="prevSlide()">❮</button>
+          <button onclick="nextSlide()">❯</button>
+        </div>
+      </div>
+
+      <div class="modal-info">
+        <h2>Rental Billing System </h2>
+        <p><strong>Description:</strong> Built a scalable billing system that automates cost calculation based on usage duration. Designed with clean archi-tecture (DTO, validation, REST APIs) for maintainability and future voice integration.</p>
+        <p><strong>Tech:</strong> Java, Spring Boot, Spring Data JPA, Hibernate, MySQL, REST APIs</p>
+
+        <div class="modal-buttons">
+          <a href="https://github.com/Vetriselvan545/Autobill-Management-System.git">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
